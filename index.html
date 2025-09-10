@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         1. Запросить у пользователя его возраст и определить, кем он
+// является: ребенком (0–2), подростком (12–18), взрослым
+// (18_60) или пенсионером (60– ...).
+
+// let age = parseInt(prompt("Enter your age"));
+// if (age >= 0 && age <= 2) {
+//     alert("You are a child");
+// } 
+// else if (age > 2 && age <= 18) 
+// {
+//     alert("You are a teenager");
+// }
+// else if (age > 18 && age <= 60) 
+// {
+//     alert("You are an adult");
+// }
+// else if (age > 60) 
+// {
+//     alert("You are a pensioner");
+// }
+// else 
+// {
+//     alert("error");
+// }
+
+// 2. Запросить у пользователя число от 0 до 9 и вывести ему
+// спецсимвол, который расположен на этой клавише (1–!,
+// 2–@, 3–# и т. д).
+
+// let number = parseInt(prompt("Enter a number from 0 to 9"));
+// if (number === 0) {
+//     alert(")");
+// } 
+// else if (number == 1) 
+// {
+//     alert("!");
+// }
+// else if (number == 2) 
+// {
+//     alert("@");
+// }
+// else if (number == 3) 
+// {
+//     alert("#");
+// }
+// else if (number == 4) 
+// {
+//     alert("$");
+// }
+// else if (number == 5) 
+// {
+//     alert("%");
+// }
+// else if (number == 6) 
+// {
+//     alert("^");
+// }
+// else if (number == 7) 
+// {
+//     alert("&");
+// }
+// else if (number == 8) 
+// {
+//     alert("*");
+// }
+// else if (number == 9) 
+// {
+//     alert("(");
+// }
+// else 
+// {
+//     alert("error");
+// }
+
+// 3. Запросить у пользователя трехзначное и число и проверить,
+// есть ли в нем одинаковые цифры.
+// 4. Запросить у пользователя год и проверить, високосный он
+// или нет. Високосный год либо кратен 400, либо кратен 4 и
+// при этом не кратен 100.
+
+// let year = parseInt(prompt("Enter a year"));
+// if (year % 400 == 0) 
+// {
+//     alert("This year is a leap year");
+// }
+// else if (year % 4 == 0)
+// {
+//     alert("This year is a leap year");
+// }
+// else if (year % 100 == 0)
+// {
+//     alert("This year is not a leap year");
+// }
+//  else {
+//     alert("This year is not a leap year");
+// }
+
+// 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
+
+// 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR,
+// UAN или AZN, и получает в ответ соответствующую сумму.
+
+// let usd = parseFloat(prompt("Enter amount in USD"));
+
+// if(usd > 0)
+// {
+//     let currency = parseInt(prompt("Enter type of currency (1-UAN или 2-AZN) "));
+// if(currency == 1 )
+// {
+//     alert(usd * 42.12)
+// }
+// else if(currency == 2)
+// {
+//      alert(usd * 24.27)
+// }
+// else
+// {
+//     alert("error")
+// } 
+
+// }
+// else
+// {
+//     alert("incorrect QUANTITY")
+// }
+   
+
+// Домашнее задание №2
+// 7. Запросить у пользователя сумму покупки и вывести сумму
+// к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300
+// до 500 – 5%, от 500 и выше – 7%.
+
+// let Sum = parseInt(prompt("Enter purchase amount: "));
+
+// if(Sum < 200)
+// {
+//     alert("Your purchase amount must be greater to receive a discount. ")
+// }
+// else if(Sum >= 200 && 300 > Sum)
+// {
+//     let discount = Sum * 0.03;
+//     let FinalDiscount = Sum - discount;
+//     alert(FinalDiscount)
+// }
+// else if(Sum >= 300 && 500 >=Sum)
+// {
+//     let discount = Sum * 0.05;
+//     let FinalDiscount = Sum - discount;
+//     alert(FinalDiscount)
+// }
+// else if(Sum > 500 )
+// {
+//     let discount = Sum * 0.07;
+//     let FinalDiscount = Sum - discount;
+//     alert(FinalDiscount)
+// }
+// 8. Запросить у пользователя длину окружности и периметр
+// квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
+
+// let length = parseFloat(prompt("Enter square side length: "));
+// let diameter = parseFloat(prompt("Enter diameter of circle: "));
+
+// if(diameter <= length)
+// {
+//     alert("circle could be in square")
+// }
+// else
+// {
+//     alert("circle couldn`t be in square")
+// }
+
+
+
+
+// 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2
+// балла. После вопросов выведите пользователю количество
+// набранных баллов.
+
+// let score = 0;
+// let question1 = parseInt(prompt("What is the capital of France? 1) Berlin 2) Madrid 3) Paris"));
+// if(question1 == 3)
+// {
+//     score += 2;
+// } 
+// let question2 = parseInt(prompt("Which car logo has two people shaking hands? 1) Honda 2) Hyundai 3) Skoda"));
+// if(question2 == 2)
+// {
+//     score += 2;
+// } 
+// let question3 = parseInt(prompt("What do cows drink? 1) Milk 2) Water 3) Sprite"));
+// if(question3 == 3)
+// {
+//     score += 2;
+// } 
+// alert("Your score is " + score);
+
+// 10. Запросить дату (день, месяц, год) и вывести следующую
+// за ней дату. Учтите возможность перехода на следующий
+// месяц, год, а также високосный год. 
+
+let day = parseInt(prompt("Enter day: "));
+let month = parseInt(prompt("Enter month: "));
+let year = parseInt(prompt("Enter year: "));
+let daysInMonth = 0;
+let isLeapYear = false;
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    isLeapYear = true;
+}
+if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12)
+{
+    daysInMonth = 31;
+} 
+else if (month === 4 || month === 6 || month === 9 || month === 11) 
+{
+    daysInMonth = 30;
+} 
+else if (month === 2) 
+{
+    if (isLeapYear) {
+        daysInMonth = 29;
+    } else {
+        daysInMonth = 28;
+    }
+}
+if (day < 1 || day > daysInMonth || month < 1 || month > 12) 
+{
+    alert("Ошибка: Некорректная дата.");
+} 
+else 
+{
+    day++;
+
+    if (day > daysInMonth) 
+    {
+        day = 1;
+        month++;
+
+        if (month > 12) {
+            month = 1;
+            year++;
+        }
+    }
+
+    alert("Следующая дата: " + day + "." + month + "." + year);
+}
+    </script>
+</body>
+</html>
